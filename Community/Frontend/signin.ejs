@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #F5F7F7;
+        }
+
+        .container {
+            max-width: 95%;
+            background-color: rgb(255, 255, 255);
+            width: 30rem;
+            height: 22rem;
+            margin: auto;
+            margin-top: 15rem;
+            border-radius: 10px;
+            box-shadow: rgb(0 0 0 / 8%) 0px 1px 4px 0px;
+        }
+
+        .field {
+            background-color: rgb(252, 252, 252);
+            border-radius: 4px;
+            border: 2px solid rgb(228, 234, 235);
+            box-sizing: border-box;
+            display: flex;
+            height: 48px;
+            outline: none;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 80%;
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: 400;
+            letter-spacing: normal;
+            color: rgb(39, 51, 57);
+            font-size: 18px;
+            line-height: 27px;
+            margin: auto;
+        }
+
+        .inputAr {
+            position: relative;
+            max-width: 90%;
+            width: 80%;
+            height: fit-content;
+            background-color: white;
+            margin: auto;
+            top: 3rem;
+        }
+
+        .btnn {
+            cursor: pointer;
+            position: relative;
+            left: 50%;
+            color: #fff;
+            transform: translateX(-50%);
+            width: 80%;
+            background-color: rgb(55, 112, 255);
+            outline: 0;
+            border: 0;
+            font-size: 18px;
+            padding: 10px;
+            font-family: 'Inter', sans-serif;
+            border-radius: 5px;
+        }
+
+        h1 {
+            font-family: 'Inter', sans-serif;
+            color: #1d1d1d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inputAr">
+            <h1 style="text-align: center;">Sign In</h1>
+            <input class="field" id="email" type="email" name="email" placeholder="Email Address" required><br>
+            <input class="field" id="password" type="password" name="password" placeholder="Password" required><br>
+            <button class="btnn">Sign In</button>
+        </div>
+    </div>
+</body>
+</html>
