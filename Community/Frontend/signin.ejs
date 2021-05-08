@@ -15,7 +15,7 @@
             max-width: 95%;
             background-color: rgb(255, 255, 255);
             width: 30rem;
-            height: 22rem;
+            height: 24rem;
             margin: auto;
             margin-top: 15rem;
             border-radius: 10px;
@@ -72,12 +72,39 @@
             font-family: 'Inter', sans-serif;
             color: #1d1d1d;
         }
+
+        .err {
+            color: #FF0909;
+            font-size: 15px;
+            text-align: center;
+            font-family: 'Inter';
+        }
+
+        @media only screen and (max-width: 600px) {
+            .email {
+                width: 100%;
+            }
+
+            .password {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 1500px) {
+            .container {
+                margin-top: 5rem;
+            }
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
         <div class="inputAr">
             <h1 style="text-align: center;">Sign In</h1>
+
+            <p class="err">Hello, I'm an error, don't mind, imma hop in your code</p>
+
             <input class="field" id="email" type="email" name="email" placeholder="Email Address" required><br>
             <input class="field" id="password" type="password" name="password" placeholder="Password" required><br>
             <button class="btnn">Sign In</button>
