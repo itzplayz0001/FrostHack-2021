@@ -13,13 +13,13 @@ app.get('/invite/:community/:invite', (req, res) => {
         if (invite.length > 6) {
             
             // CHECK VALIDATION OF INVITE
-            social.validateInvite(com, invite)
-            if (social.validateInvite = true) {
-                res.send('Valid!')
+            let validated = social.validateInvite(com, invite)
+            if (validated = true) {
+                res.send('Valid invite')
             } else {
-                res.send('Invalid!')
+                res.send('Invalid invite')
+                //res.render('badInvite.ejs')
             }
-
 
         } else {
             console.log('bad invite')
@@ -31,14 +31,8 @@ app.get('/invite/:community/:invite', (req, res) => {
     }
 })
 
-
-let check = social.validateInvite('34534534528967', 'sudfisfgisgzdiu')
-console.log(check)
-/*if (check) {
-    console.log('Valid')
-} else {
-    console.log('Invalid')
-}*/
+let valid = social.validateInvite('846593845734', '839758fsdfg')
+console.log(valid)
 
 console.log('App listening on 5050')
 app.listen('5050')
