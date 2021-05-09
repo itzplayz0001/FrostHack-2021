@@ -12,9 +12,12 @@ Hello there! We are team Pentagon 🚀.  Our project's name is CommSquare, a pla
 3. `node server.js`
 
 ## Dependencies ⤴️
-1. "npm": 6.9.0
-2. "node": 12.0.0
 3. "express": 4.17.1
+2. "body-parser": "^1.19.0"
+3. "cookie-parser": "^1.4.5"
+4. "ejs": "^3.1.6"
+5. "mysql": "^2.18.1"
+6. "mysql2": "^2.2.5"
 
 ## Citations 📑
 We have use the following pre-made frameworks within our project
