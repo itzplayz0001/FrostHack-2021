@@ -21,7 +21,7 @@ Hello there! We are team Pentagon 🚀.  Our project's name is CommSquare, a pla
 4. "ejs": "^3.1.6"
 5. "mysql": "^2.18.1"
 6. "mysql2": "^2.2.5"
-7. 
+
 ## Citations 📑
 We have use the following pre-made frameworks within our project
 - [Bootstrap](https://getbootstrap.com/)
