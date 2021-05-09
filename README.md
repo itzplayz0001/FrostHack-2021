@@ -19,12 +19,12 @@ Hello there! We are team Pentagon 🚀.  Our project's name is CommSquare, a pla
 5. "mysql": "^2.18.1"
 6. "mysql2": "^2.2.5"
 
+## Dumps
+Hello
+
 ## Citations 📑
 We have use the following pre-made frameworks within our project
 - [Bootstrap](https://getbootstrap.com/)
 - [FontAwesome](https://fontawesome.com/)
 - [Google Fonts](https://fonts.google.com/)
 - [Flat Icon](https://flaticon.com/)
-
-## Dumps
-Hello
