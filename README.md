@@ -1,7 +1,7 @@
 # FrostHack-2021 ❄️
 
 <p align="center">
-<img style="border: 10px solid white; border-radius: 50%" src="https://i.postimg.cc/ZYGzmYp4/logo.png" alt="CommSquare Logo">
+<img style="border-radius: 50%" src="https://cdn.discordapp.com/attachments/840466882477686825/840846403440738304/unknown.png" alt="CommSquare Logo">
 </p>
 
 Hello there! We are team Pentagon 🚀.  Our project's name is CommSquare, a platform for (comm)unities to transparently (comm)unicate. The theme we chose is "Medical and Event Management". The following sections elaborate how to run our code with the list of dependencies. Of course, we are ever grateful to the frameworks that we utilise in this project, completely listed in the 3rd section.
