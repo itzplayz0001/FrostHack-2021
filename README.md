@@ -21,3 +21,4 @@ We have use the following pre-made frameworks within our project
 - [Bootstrap](https://getbootstrap.com/)
 - [FontAwesome](https://fontawesome.com/)
 - [Google Fonts](https://fonts.google.com/)
+- [Flat Icon](https://flaticon.com/)
