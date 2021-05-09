@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <title>Complete Profile</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #F5F7F7;
+        }
+        .field {
+            background-color: rgb(252, 252, 252);
+            border-radius: 4px;
+            border: 2px solid rgb(228, 234, 235);
+            box-sizing: border-box;
+            display: flex;
+            height: 48px;
+            outline: none;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 80%;
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: 400;
+            letter-spacing: normal;
+            color: rgb(39, 51, 57);
+            font-size: 18px;
+            line-height: 27px;
+            margin: auto;
+        }
+        .inputAr {
+            position: relative;
+            height: max-content;
+            background-color: white;
+            margin: auto auto;
+            border-radius: 10px;
+            box-shadow: rgb(0 0 0 / 8%) 0px 1px 4px 0px;
+            padding: 40px 20px 50px 20px;
+            max-width: 420px;
+            top: 50%;
+            transform: translateY(-65%);
+        }
+        .btnn {
+            cursor: pointer;
+            position: relative;
+            left: 50%;
+            color: #fff;
+            transform: translateX(-50%);
+            width: 80%;
+            background-color: rgb(55, 112, 255);
+            outline: 0;
+            border: 0;
+            font-size: 20px;
+            padding: 14px 10px;
+            font-family: 'Inter', sans-serif;
+            border-radius: 5px;
+        }
+        h1 {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            color: #1d1d1d;
+            text-align: center;
+        }
+        .err {
+            color: #FF0909;
+            font-size: 15px;
+            text-align: center;
+            font-family: 'Inter';
+        }
+        @media only screen and (max-width: 600px) {
+            .email {
+                width: 100%;
+            }
+            .password {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="inputAr">
+        <h1 style="text-align: center;margin-bottom: 16px;">Join Community</h1>
+        <p class="err"> <%= message %> </p>
+        <input class='field' type='text' placeholder="Community's ID" id='comm_id'>
+        <button id='submit' class='btnn' onclick="submit();" style="margin-bottom: 24px;margin-top: 8px;">Join Community</button>
+        <input class='field' type='text' placeholder="Your Community's Name" id='new_comm_name'>
+        <button id='submit' class='btnn' onclick="generateComm();" style="margin-top: 8px;">Create New</button>
+    </div>
+<script>
+    const parseCookie = (str) => str.split(';').map(v => v.split('=')).reduce((acc, v) => {acc[decodeURIComponent(v[0].trim())] = decodeURIComponent(v[1].trim());return acc;}, {});
+
+    function generateComm(){
+        fetch(`http://localhost:8080/generateComm?name=${document.querySelector('#new_comm_name').value}`)
+        .then(r => r.json())
+        .then(d => {
+            console.log(d);
+            if(d.status == 200){
+                document.querySelector('.err').innerHTML = d.message;
+            }
+            setTimeout(() => {
+                window.open('http://localhost:8080/', '_self');
+            }, 3000)
+        })
+    }
+
+    function submit(){
+        let comm_id = document.querySelector('#comm_id').value;
+        window.open(`http://localhost:8080/complete?comm_id=${comm_id}`, '_self');
+        console.log(email, password, name);
+    }
+</script>
+</body>
+</html>
