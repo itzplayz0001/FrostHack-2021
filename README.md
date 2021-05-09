@@ -10,8 +10,9 @@ Hello there! We are team Pentagon 🚀.  Our project's name is CommSquare, a pla
 1. `https://github.com/itzplayz0001/FrostHack-2021`
 2. `cd FrostHack-2021/`
 3. `node server.js`
-4. `CREATE database communities;` to create the db
-5. Dump the SQL in `/dump` the database
+4. Update con.js, host, username, password
+5. `CREATE database communities;` to create the db
+6. Dump the SQL in `/dump` the database
 
 ## Dependencies ⤴️
 3. "express": 4.17.1
@@ -20,10 +21,7 @@ Hello there! We are team Pentagon 🚀.  Our project's name is CommSquare, a pla
 4. "ejs": "^3.1.6"
 5. "mysql": "^2.18.1"
 6. "mysql2": "^2.2.5"
-
-## Dumps
-Hello
-
+7. 
 ## Citations 📑
 We have use the following pre-made frameworks within our project
 - [Bootstrap](https://getbootstrap.com/)
