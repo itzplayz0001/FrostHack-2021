@@ -10,7 +10,7 @@ Hello there! We are team Pentagon 🚀.  Our project's name is CommSquare, a pla
 1. `https://github.com/itzplayz0001/FrostHack-2021`
 2. `cd FrostHack-2021/`
 3. `node server.js`
-4. Update con.js, host, username, password
+4. Update `con.js` -> `host, username, password`
 5. `CREATE database communities;` to create the db
 6. Dump the SQL in `/dump` the database
 
